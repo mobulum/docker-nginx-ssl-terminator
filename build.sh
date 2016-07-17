@@ -1,6 +1,6 @@
 #!/bin/sh
 
-IMAGE="mobulum/ssl-terminator"
+IMAGE="mobulum/nginx-ssl-terminator"
 VERSION="$1"
 IMAGE_NAME="${IMAGE}:${VERSION}"
 
