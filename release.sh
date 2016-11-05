@@ -16,11 +16,6 @@ function gitTag() {
   git-release $tag
 }
 
-function packageProperty() {
-  local field="$1"
-  echo `npm view . $field`
-}
-
 function githubRelease() {
   echo "github release stage"
   echo
