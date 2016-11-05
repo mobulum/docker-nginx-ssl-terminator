@@ -1,4 +1,10 @@
+# Load balancer with ssl terminating based on nginx
+# WEBSITE https://github.com/mobulum/docker-nginx-ssl-terminator
+# VERSION 1.0.0
+
+# Use phusion/baseimage as base image
 FROM phusion/baseimage:latest
+MAINTAINER Mateusz Stępniak "contact@mobulum.com"
 
 ENV HOME /root
 ENV DEBIAN_FRONTEND noninteractive
@@ -64,4 +70,3 @@ RUN cat /etc/nginx/sites-enabled/default.conf.source
 CMD ["/sbin/my_init", "--", "bash", "/usr/local/bin/start"]
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
