@@ -1,6 +1,6 @@
 # Load balancer with ssl terminating based on nginx
 # WEBSITE https://github.com/mobulum/docker-nginx-ssl-terminator
-# VERSION 1.1.0
+# VERSION 1.1.1
 
 # Use phusion/baseimage as base image
 FROM phusion/baseimage:latest
